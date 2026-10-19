@@ -25,7 +25,7 @@ onchain. Every change is measured in gas.
 - **2,400+ merged pull requests** across 60+ repositories, and 11,500+ contributions since 2022.
 - **#1 contributor** to Cartridge's [Arcade](https://github.com/cartridge-gg/arcade), to
   [Paved](https://github.com/stolslilabs/paved) and to Dojo's [Origami](https://github.com/dojoengine/origami), which I started.
-- **Dojo Game Jam winner** with zKnight, zDefender, zKlash, Grim Block and Athanor, and **1st place** at the Node Guardians CTF.
+- **Dojo Game Jam winner** with zKnight, zDefender, zKlash and Athanor, and **1st place** at the Node Guardians CTF.
 - **8 Cairo libraries** published on [scarbs.xyz](https://scarbs.xyz), including a provable physics stack whose core math uses 7 to 12× less gas than a cubit-style scalar.
 - **1,200+ PRs merged in Sept–Oct 2026** with orchestrated coding agents, every change gated by CI gas budgets.
 
@@ -150,7 +150,6 @@ starting with `u252`.
 | Date | Event | Result | Project |
 |---|---|---|---|
 | 03/2026 | Dojo Game Jam VIII | 🏆 Winner | [Athanor](https://github.com/djizus/athanor), with djizus |
-| 11/2025 | Dojo Game Jam VII | 🏆 Prize winner | [Grim Block](https://github.com/bal7hazar/grimblock), solo |
 | 04/2024 | Dojo Game Jam #4 | 🥇 1st | [zKlash](https://github.com/z-korp/zklash) |
 | 11/2023 | Dojo Game Jam #2 | 🥇 1st | [zDefender](https://github.com/z-korp/zdefender-contracts) |
 | 09/2023 | Dojo Game Jam #1 | 🥇 1st | [zKnight](https://github.com/z-korp/zknight-contracts) |
