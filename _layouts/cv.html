@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  {% seo %}
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚒️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/cv.css' | relative_url }}">
+</head>
+<body>
+  <nav class="toolbar" aria-label="Page">
+    <a href="https://github.com/bal7hazar">github.com/bal7hazar</a>
+    <button type="button" onclick="window.print()">Save as PDF</button>
+  </nav>
+  <main class="cv">
+    {{ content }}
+  </main>
+</body>
+</html>

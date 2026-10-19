@@ -25,15 +25,15 @@ onchain. Every change is measured in gas.
 - **2,400+ merged pull requests** across 60+ repositories, and 11,500+ contributions since 2022.
 - **#1 contributor** to Cartridge's [Arcade](https://github.com/cartridge-gg/arcade), to
   [Paved](https://github.com/stolslilabs/paved) and to Dojo's [Origami](https://github.com/dojoengine/origami), which I started.
-- **3× 1st place** at Dojo Game Jams and **1st place** at the Node Guardians CTF.
-- **Provable physics stack** published on [scarbs.xyz](https://scarbs.xyz). Its core math uses 7 to 12× less gas than a cubit-style scalar.
+- **Dojo Game Jam winner** with zKnight, zDefender, zKlash, Grim Block and Athanor, and **1st place** at the Node Guardians CTF.
+- **8 Cairo libraries** published on [scarbs.xyz](https://scarbs.xyz), including a provable physics stack whose core math uses 7 to 12× less gas than a cubit-style scalar.
 - **1,200+ PRs merged in Sept–Oct 2026** with orchestrated coding agents, every change gated by CI gas budgets.
 
 ---
 
 ## Experience
 
-### Open-source R&D: Provable game physics
+### Open-source R&D: Provable games and Cairo libraries
 <sub>2026 – present · Remote, France</sub>
 
 - **Ported** Rust's game-math and physics crates to Cairo on a custom Q32.32 fixed-point scalar:
@@ -47,6 +47,13 @@ onchain. Every change is measured in gas.
 - **Built [Slingfall](https://github.com/bal7hazar/slingfall)**, a 2D slingshot game deployed on
   Starknet Sepolia. Each level is replayed in cairo-vm (WASM, in a Web Worker), proven, then settled
   onchain.
+- **Porting [hexx](https://github.com/bal7hazar/hexx-cairo)**, the Rust hexagonal-grid crate, for
+  [Grim World](https://github.com/bal7hazar/grimworld), a fully onchain tick-based RPG. Boards are
+  stored as bitmaps in a single felt; release candidates are on scarbs.xyz.
+- **Wrote [Quiver](https://github.com/bal7hazar/quiver)**: quests and achievements as native Starknet
+  components, the Dojo-free successors of my Arcade packages.
+- **Exploring** [Hellproof](https://github.com/bal7hazar/doom), a Doom-like FPS proven in the browser
+  with Stwo and verified on Starknet.
 - **Ran the work with orchestrated coding agents.** Each task has a committed brief and its own agent
   in its own worktree. PRs are audited and merged on green CI, with gas snapshots for every test.
 
@@ -106,10 +113,29 @@ Gaming infrastructure for Starknet: the Controller wallet, Arcade and the Market
 
 ## Open source
 
+### Cairo libraries
+
+All of them are published on [scarbs.xyz](https://scarbs.xyz), with gas measured on every test.
+
+| Package | Port of | What |
+|---|---|---|
+| [`fixed`](https://github.com/bal7hazar/fixed-cairo) | `f64` | Signed Q32.32 fixed-point scalar: bit-exact, fused kernels, loop-free trigonometry |
+| [`simba`](https://github.com/bal7hazar/simba-cairo) | simba | Scalar traits (`Real`, `Transcendental`) for generic linear algebra |
+| [`nalgebra`](https://github.com/bal7hazar/nalgebra-cairo) | nalgebra | Linear algebra: 99.9 % of the API, from static matrices to SVD and eigen decompositions |
+| [`glam`](https://github.com/bal7hazar/glam-cairo) | glam | Vectors, matrices and quaternions: 7 to 12× less gas than a cubit-style scalar |
+| [`glamx`](https://github.com/bal7hazar/glamx-cairo) | glamx | Rotations, poses and symmetric matrices, the layer Rapier is written against |
+| [`rapier2d`](https://github.com/bal7hazar/rapier-cairo) | Rapier | 2D physics: rigid bodies, colliders, joints, sensors, events, world save and restore |
+| [`hexx`](https://github.com/bal7hazar/hexx-cairo) | hexx | Hexagonal grids, with boards stored as bitmaps in a single felt |
+| [`quiver_quest`, `quiver_achievement`](https://github.com/bal7hazar/quiver) | Arcade | Quests and achievements as native Starknet components |
+
+In progress: [`types-cairo`](https://github.com/bal7hazar/types-cairo), one package per numeric type,
+starting with `u252`.
+
+### Contributions
+
 | Project | What | Role |
 |---|---|---|
 | [Origami](https://github.com/dojoengine/origami) | Game library for Dojo: ELO rating, maze generation, pathfinding | Started it, #1 contributor |
-| [Quiver](https://github.com/bal7hazar/quiver) | Quests and achievements as Starknet components, on scarbs.xyz | Author |
 | [Shinigami](https://github.com/bal7hazar/shinigami) | A design pattern for autonomous worlds in Cairo | Author |
 | [Alexandria](https://github.com/keep-starknet-strange/alexandria) | Numerical, linear algebra, Merkle tree and bitmap modules | Contributor |
 | Upstream fixes | [Dojo](https://github.com/dojoengine/dojo), [OpenZeppelin Cairo](https://github.com/OpenZeppelin/cairo-contracts), [Kakarot](https://github.com/kkrt-labs/kakarot), [Pragma](https://github.com/astraly-labs/pragma-oracle), [cubit](https://github.com/influenceth/cubit), [Orion](https://github.com/gizatechxyz/orion) | Contributor |
@@ -123,6 +149,8 @@ Gaming infrastructure for Starknet: the Controller wallet, Arcade and the Market
 
 | Date | Event | Result | Project |
 |---|---|---|---|
+| 03/2026 | Dojo Game Jam VIII | 🏆 Winner | [Athanor](https://github.com/djizus/athanor), with djizus |
+| 11/2025 | Dojo Game Jam VII | 🏆 Prize winner | [Grim Block](https://github.com/bal7hazar/grimblock), solo |
 | 04/2024 | Dojo Game Jam #4 | 🥇 1st | [zKlash](https://github.com/z-korp/zklash) |
 | 11/2023 | Dojo Game Jam #2 | 🥇 1st | [zDefender](https://github.com/z-korp/zdefender-contracts) |
 | 09/2023 | Dojo Game Jam #1 | 🥇 1st | [zKnight](https://github.com/z-korp/zknight-contracts) |

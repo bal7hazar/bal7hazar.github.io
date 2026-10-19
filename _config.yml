@@ -1,0 +1,33 @@
+title: Bal7hazar
+description: >-
+  Onchain Game Engineer · Cairo · Starknet · Dojo. Former mechanical engineer,
+  now building games whose rules, and physics, can be proven.
+url: https://bal7hazar.github.io
+baseurl: ""
+lang: en
+twitter:
+  username: bal7hazar
+
+# Parse the Markdown inside HTML blocks (the centered header of CV.md), as GitHub does.
+kramdown:
+  input: GFM
+  parse_block_html: true
+
+# CV.md is the home page: one source for github.com and for the site.
+defaults:
+  - scope:
+      path: CV.md
+    values:
+      layout: cv
+      title: Résumé
+      permalink: /
+
+plugins:
+  - jekyll-seo-tag
+
+# Serve the rendered CV only, not a raw copy of CV.md.
+optional_front_matter:
+  remove_originals: true
+
+exclude:
+  - README.md
