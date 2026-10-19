@@ -46,6 +46,9 @@ Gaming infrastructure for Starknet: the Controller wallet, Arcade and the Market
   royalties, client fees, integrity model and the fixes from the internal audit.
 - **Developed [Nums](https://github.com/cartridge-gg/nums)**, a fully onchain number-placement game:
   Dojo contracts, staking, quests and theming, in 100+ merged PRs.
+- **Developed [Glitch Bomb](https://glitchbomb.game)**, an onchain push-your-luck game: pull orbs,
+  cash out or spend in the shop at milestones, with verifiable randomness. Took it from its first
+  Controller integration in 2025 to its mainnet release in July 2026.
 - **Maintained the session presets** (policies and assets) of partner games such as Eternum, Nums and
   Glitch Bomb. Integrated Controller achievements into [Eternum](https://github.com/BibliothecaDAO/eternum).
 
