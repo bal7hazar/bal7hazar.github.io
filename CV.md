@@ -8,8 +8,6 @@ Former mechanical engineer, now building games whose rules, and physics, can be 
 
 [GitHub](https://github.com/bal7hazar) · [X / Twitter](https://x.com/bal7hazar) · France · Remote
 
-*Open to new opportunities in onchain gaming and provable computation.*
-
 </div>
 
 ---
@@ -18,9 +16,10 @@ Former mechanical engineer, now building games whose rules, and physics, can be 
 
 Onchain game engineer with 4+ years on Starknet and seven years of mechanical engineering
 before that. I design and ship fully onchain games and the infrastructure around them: Cairo
-contracts, game engines, SDKs and player-facing apps. I currently port Rust's game-math and
-physics stack to Cairo, so that a whole game, physics included, can be proven and settled
-onchain. Every change is measured in gas.
+contracts, game engines, SDKs and player-facing apps. At Cartridge, I build the gaming
+infrastructure of Starknet. In open source, I port Rust's game-math and physics stack to Cairo,
+so that a whole game, physics included, can be proven and settled onchain. Every change is
+measured in gas.
 
 - **2,400+ merged pull requests** across 60+ repositories, and 11,500+ contributions since 2022.
 - **#1 contributor** to Cartridge's [Arcade](https://github.com/cartridge-gg/arcade), to
@@ -33,8 +32,25 @@ onchain. Every change is measured in gas.
 
 ## Experience
 
-### Open-source R&D: Provable games and Cairo libraries
-<sub>2026 – present · Remote, France</sub>
+### Cartridge: Software Engineer
+<sub>2024 – present · Remote</sub>
+
+Gaming infrastructure for Starknet: the Controller wallet, Arcade and the Marketplace.
+
+- **Built [Arcade](https://github.com/cartridge-gg/arcade)**, the onchain layer that connects Dojo
+  worlds to the Controller: achievements, quests, leaderboards, game editions and starter packs.
+  I am its #1 contributor, with 387 commits.
+- **Shipped 150+ PRs to the [Controller](https://github.com/cartridge-gg/controller)**: trophies and
+  quests, ERC-20 and ERC-721 transfers, collections, the Arcade UI components and the purchase flow.
+- **Wrote the [Marketplace](https://github.com/cartridge-gg/marketplace)** contracts and SDK: order book,
+  royalties, client fees, integrity model and the fixes from the internal audit.
+- **Developed [Nums](https://github.com/cartridge-gg/nums)**, a fully onchain number-placement game:
+  Dojo contracts, staking, quests and theming, in 100+ merged PRs.
+- **Maintained the session presets** (policies and assets) of partner games such as Eternum, Nums and
+  Glitch Bomb. Integrated Controller achievements into [Eternum](https://github.com/BibliothecaDAO/eternum).
+
+### Open source: Provable games and Cairo libraries
+<sub>2026 – present</sub>
 
 - **Ported** Rust's game-math and physics crates to Cairo on a custom Q32.32 fixed-point scalar:
   [`fixed`](https://github.com/bal7hazar/fixed-cairo), [`simba`](https://github.com/bal7hazar/simba-cairo),
@@ -56,23 +72,6 @@ onchain. Every change is measured in gas.
   with Stwo and verified on Starknet.
 - **Ran the work with orchestrated coding agents.** Each task has a committed brief and its own agent
   in its own worktree. PRs are audited and merged on green CI, with gas snapshots for every test.
-
-### Cartridge: Software Engineer
-<sub>2024 – 2026 · Remote</sub>
-
-Gaming infrastructure for Starknet: the Controller wallet, Arcade and the Marketplace.
-
-- **Built [Arcade](https://github.com/cartridge-gg/arcade)**, the onchain layer that connects Dojo
-  worlds to the Controller: achievements, quests, leaderboards, game editions and starter packs.
-  I am its #1 contributor, with 387 commits.
-- **Shipped 150+ PRs to the [Controller](https://github.com/cartridge-gg/controller)**: trophies and
-  quests, ERC-20 and ERC-721 transfers, collections, the Arcade UI components and the purchase flow.
-- **Wrote the [Marketplace](https://github.com/cartridge-gg/marketplace)** contracts and SDK: order book,
-  royalties, client fees, integrity model and the fixes from the internal audit.
-- **Developed [Nums](https://github.com/cartridge-gg/nums)**, a fully onchain number-placement game:
-  Dojo contracts, staking, quests and theming, in 100+ merged PRs.
-- **Maintained the session presets** (policies and assets) of partner games such as Eternum, Nums and
-  Glitch Bomb. Integrated Controller achievements into [Eternum](https://github.com/BibliothecaDAO/eternum).
 
 ### Stolsli Labs: Paved
 <sub>Lead contributor · 2024 – present</sub>
